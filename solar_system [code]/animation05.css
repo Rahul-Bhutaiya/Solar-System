@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+}
+.text{
+    position: relative;
+    top: 75%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align:center;
+    font-family: Poppins,sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+}
+h1>span{
+    font-size: 2rem;
+    border-bottom: 2px solid white;
+}
+
+.star{
+    position: absolute;    
+    width: fit-content;    
+    object-fit: cover;
+
+    animation-name: blowing-star;
+    animation-duration: 0.9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes blowing-star{
+    from{
+        filter: drop-shadow(0px 0px 0px #e2e1e1);
+    }
+    to{
+        filter: drop-shadow(20px 20px 20px #e2e1e1,-20px -20px 20px #e2e1e1);
+    }
+}
+#star1{
+    left: 0px;
+    bottom: 0px;
+    height: 100px;
+}
+#star2{
+    left: -1%;
+    top: 1%;
+    height: 50px;
+}
+#star3{
+    left: -0.5%;
+    top: 6%;
+    height: 80px;
+}
+#star4{
+    left: 2%;
+    top: 56%;
+    height: 70px;
+}
+#star5{
+    left: 4%;
+    top: 46%;
+    height: 99px;
+}
+#star6{
+    left: 18%;
+    top: 10%;
+    height: 80px;
+}
+#star7{
+    left: 15%;
+    top: 36%;
+    height: 30px;
+}
+#star8{
+    left: 46%;
+    top: 26%;
+    height: 19px;
+}
+#star9{
+    left: 40%;
+    top: 1%;
+    height: 80px;
+}
+#star10{
+    left: 24%;
+    top: 36%;
+    height: 40px;
+}
+#star11{
+    right: 24%;
+    top: 30%;
+    height: 40px;
+}
+#star12{
+    right: 14%;
+    top: 70%;
+    height: 40px;
+}
+#star13{
+    right: 0%;
+    top: 90%;
+    height: 50px;
+}
+#star14{
+    right: 45%;
+    top: 14%;
+    height: 50px;
+}
+#star15{
+    right: 5%;
+    top: 24%;
+    height: 90px;
+}
+#star16{
+    right: 25%;
+    top: 44%;
+    height: 40px;
+}
+#star17{
+    right: 5%;
+    top: 50%;
+    height: 20px;
+}
+#star18{
+    right: 5%;
+    top: 80%;
+    height: 60px;
+}
+#star19{
+    right: 35%;
+    top: 8%;
+    height: 50px;
+}
+#star20{
+    right: 15%;
+    top: 3%;
+    height: 40px;
+}
+#star21{
+    right: 40%;
+    top: 30%;
+    height: 30px;
+}
+#star22{
+    right: 20%;
+    top: 40%;
+    height: 25px;
+}
+#star23{
+    right: -1%;
+    top: 0%;
+    height: 35px;
+}
+#star24{
+    right: 25%;
+    top: 15%;
+    height: 35px;
+}
+#star25{
+    transform: scale(0.5);
+}
+
+img[src="images/sun.jpg"]{
+    height: 1200px;
+    width: 100%;
+    transform: scale(1);
+    position: absolute;
+    top: 35%;
+    object-fit: cover;
+    
+
+    animation-name: moving-sun;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes moving-sun{
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(36deg);
+    }
+    20%{
+        transform: rotate(72deg);
+    }
+    30%{
+        transform: rotate(108deg);
+    }
+    40%{
+        transform: rotate(144deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    60%{
+        transform: rotate(216deg);
+    }
+    70%{
+        transform: rotate(252deg);
+    }
+    80%{
+        transform: rotate(288deg);
+    }
+    90%{
+        transform: rotate(324deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+img[src="images/mercury.png"]{
+    object-fit: cover;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+
+    animation-name: moving-planets;
+    animation-duration:25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+
+img[src="images/venus.png"]{
+    position: absolute;
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+
+    animation-name: moving-planets;
+    animation-duration:27s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+img[src="images/earth.png"]{
+    position: absolute;
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+
+    animation-name: moving-planets;
+    animation-duration:29s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+img[src="images/mars.png"]{
+    position: absolute;
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+
+    animation-name: moving-planets;
+    animation-duration:31s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+img[src="images/jupiter.png"]{
+    position: absolute;
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+
+    animation-name: moving-planets;
+    animation-duration:33s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+img[src="images/Saturn.png"]{
+    position: absolute;
+    transform: rotate(180deg);
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+
+    animation-name: moving-ring-planets;
+    animation-duration:35s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+img[src="images/uranus.png"]{
+    position: absolute;
+    object-fit: cover;
+    transform: rotate(60deg);
+    
+    height: 75px;
+    width: 75px;
+
+    animation-name: moving-ring-planets;
+    animation-duration:37s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+img[src="images/naptune.png"]{
+    position: absolute;
+    object-fit: cover;
+    height: 75px;
+    width: 75px;
+
+    animation-name: moving-planets;
+    animation-duration:39s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes moving-planets{
+    0%{
+        top: 25%;
+        right: -10%;
+        transform: rotate(0deg);
+    }
+     10%{
+        top: 20%;
+        right: 1%;
+        transform: rotate(45deg);
+    }
+    20%{
+        top: 15%;
+        right: 12%;
+        transform: rotate(90deg);
+    }
+    30%{
+        top: 10%;
+        right: 23%;
+        transform: rotate(135deg);
+    }
+    40%{
+        top: 5%;
+        right: 34%;
+        transform: rotate(180deg);
+    }
+    50%{
+        top: 3.5%;
+        right: 45%;
+        transform: rotate(225deg);
+    }
+    60%{
+        top: 5%;
+        right: 56%;
+        transform: rotate(270deg);
+    }
+    70%{
+        top: 10%;
+        right: 67%;
+        transform: rotate(315deg);
+    }
+    80%{
+        top: 15%;
+        right: 78%;
+        transform: rotate(360deg);
+    }
+    90%{
+        top: 20%;
+        right: 89%;
+        transform: rotate(405deg);
+    }
+    100%{
+        top: 25%;
+        right: 100%;
+        transform: rotate(450deg);
+    }
+}
+
+
+@keyframes moving-ring-planets{
+    0%{
+        top: 25%;
+        right: -10%;
+    }
+     10%{
+        top: 20%;
+        right: 1%;
+    }
+    20%{
+        top: 15%;
+        right: 12%;
+    }
+    30%{
+        top: 10%;
+        right: 23%;
+    }
+    40%{
+        top: 5%;
+        right: 34%;
+    }
+    50%{
+        top: 3.5%;
+        right: 45%;
+    }
+    60%{
+        top: 5%;
+        right: 56%;
+    }
+    70%{
+        top: 10%;
+        right: 67%;
+    }
+    80%{
+        top: 15%;
+        right: 78%;
+    }
+    90%{
+        top: 20%;
+        right: 89%;
+    }
+    100%{
+        top: 25%;
+        right: 100%;
+    } 
+}
